@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Add new class for underlining */
+.underline {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%; /* Adjust as needed */
+    height: 2px;
+    background-color: black; /* Adjust color as needed */
+    bottom: -5px; /* Adjust distance from text */
+    left: 25%; /* Adjust position as needed */
+    margin-top: 30px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions button {
+    margin-left: 5px;
+    cursor: pointer;
+}
